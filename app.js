@@ -27,7 +27,8 @@
                 result = "たこ焼き"; 
             } else if (colour === "銀色" && number === 12) {
                 result = "お好み焼き";
-          
+            }
+        
 　　　　　　
                 document.getElementById('result-output').innerText = "あなたの今日のご飯は【" + result + "】です";
         }
