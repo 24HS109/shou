@@ -24,7 +24,5 @@ function checkFortune() {
         result = "お好み焼き";
     }  
 
-
-      
     document.getElementById('result-output').innerText = "あなたの今日のご飯は【" + result + "】です";
 }
