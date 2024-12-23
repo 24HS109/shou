@@ -1,7 +1,7 @@
 function checkFortune() {
     var colour = document.getElementById('colour-select').value;
     var number = parseInt(document.getElementById('number-input').value, 10);
-    var result = "今日のご飯"; // デフォルトの値
+    var result = "入力が違います"; // デフォルトの値
 
     // Check for valid combinations
     if (colour === "ピンク" && number === 1) {
