@@ -1,8 +1,9 @@
-      function checkFortune() {
+function checkFortune() {
     var colour = document.getElementById('colour-select').value;
     var number = parseInt(document.getElementById('number-input').value, 10);
     var result = "今日のご飯"; // デフォルトの値
 
+    // Check for valid combinations
     if (colour === "ピンク" && number === 1) {
         result = "カレー";
     } else if (colour === "赤" && number === 2) {
@@ -27,7 +28,11 @@
         result = "たこ焼き"; 
     } else if (colour === "銀色" && number === 12) {
         result = "お好み焼き";
+    } else {
+        // Handle cases where the input is invalid
+        result = "無効な選択です。もう一度試してください。";
     }
 
+    // Display the result
     document.getElementById('result-output').innerText = "あなたの今日のご飯は【" + result + "】です";
 }
