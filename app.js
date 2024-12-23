@@ -14,19 +14,10 @@ function checkFortune() {
         result = "寿司";
     } else if (colour === "青" && number === 0) {
         result = "うどん";
-    } else if (colour === "オレンジ" && number === 0) {
-        result = "パスタ";
-    } else if (colour === "緑" && number === 0) {
-        result = "焼肉";
-    } else if (colour === "紫" && number === 0) {
-        result = "天ぷら"; 
-    } else if (colour === "黄緑" && number === 0) {
-        result = "そば"; 
-    } else if (colour === "茶色" && number === 0) {
-        result = "たこ焼き"; 
-    } else if (colour === "銀色" && number === 0) {
-        result = "お好み焼き";
-    } 
+    } else if (colour === "青" && number === 1) {
+        result = "ラーメン";
+     } else if (colour === "青" && number === 2) {
+        result = "うどん";
 
     document.getElementById('result-output').innerText = "あなたの今日のご飯は【" + result + "】です";
 }
