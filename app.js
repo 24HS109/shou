@@ -4,29 +4,29 @@ function checkFortune() {
     var result = "入力が違います"; // デフォルトの値
 
     // Check for valid combinations
-    if (colour === "ピンク" && number === 1) {
+    if (colour === "ピンク" && number === 0) {
         result = "カレー";
-    } else if (colour === "赤" && number === 2) {
+    } else if (colour === "赤" && number === 0) {
         result = "ラーメン";
-    } else if (colour === "黒" && number === 3) {
+    } else if (colour === "黒" && number === 0) {
         result = "牛丼";
-    } else if (colour === "水色" && number === 4) {
+    } else if (colour === "水色" && number === 0) {
         result = "オムライス";
-    } else if (colour === "白" && number === 5) {
+    } else if (colour === "白" && number === 0) {
         result = "寿司";
-    } else if (colour === "青" && number === 6) {
+    } else if (colour === "青" && number === 0) {
         result = "うどん";
-    } else if (colour === "オレンジ" && number === 7) {
+    } else if (colour === "オレンジ" && number === 0) {
         result = "パスタ";
-    } else if (colour === "緑" && number === 8) {
+    } else if (colour === "緑" && number === 0) {
         result = "焼肉";
-    } else if (colour === "紫" && number === 9) {
+    } else if (colour === "紫" && number === 0) {
         result = "天ぷら"; 
-    } else if (colour === "黄緑" && number === 10) {
+    } else if (colour === "黄緑" && number === 0) {
         result = "そば"; 
-    } else if (colour === "茶色" && number === 11) {
+    } else if (colour === "茶色" && number === 0) {
         result = "たこ焼き"; 
-    } else if (colour === "銀色" && number === 12) {
+    } else if (colour === "銀色" && number === 0) {
         result = "お好み焼き";
     } 
 
