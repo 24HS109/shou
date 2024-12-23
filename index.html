@@ -1,28 +1,37 @@
-function checkFortune() {
-    var colour = document.getElementById('colour-select').value;
-    var number = parseInt(document.getElementById('number-input').value, 10);
-    var result = "入力が違います"; // Default value
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今日のご飯</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Make sure the CSS file is present -->
+</head>
+    
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="pyscript.html">PyScriptVer</a>
+            <a href="cluster_analysis.html">ClusterAnalysis</a>
+        </nav>
 
-    // Check for valid combinations
-    if (colour === "ピンク" && number === 0) {
-        result = "カレー";
-    } else if (colour === "ピンク" && number === 1) {
-        result = "牛丼";
-    } else if (colour === "ピンク" && number === 2) {
-        result = "オムライス";
-    } else if (colour === "赤" && number === 0) {
-        result = "うどん";
-    } else if (colour === "赤" && number === 1) {
-        result = "ラーメン";
-    } else if (colour === "赤" && number === 2) {
-        result = "たこ焼き";
-    } else if (colour === "青" && number === 0) {
-        result = "寿司";
-    } else if (colour === "青" && number === 1) {
-        result = "パスタ";
-    } else if (colour === "青" && number === 2) {
-        result = "お好み焼き";
-    }
+        <br>
+        <label for="colour-select">好きな色を選んでください：</label>
+        <select id="colour-select">
+            <option value="ピンク">ピンク</option>
+            <option value="赤">赤</option>
+            <option value="青">青</option>
+        </select>
+        <br>
+        <label for="number-input">好きな数字を選んでください（0、1、2）※半角数値で入力：</label>
+        <input type="number" id="number-input" min="0" max="2" step="1">
+        <br>
+        <button onclick="checkFortune()">今日のご飯</button>
+        <p id="result-output"></p>
 
-    document.getElementById('result-output').innerText = "あなたの今日のご飯は【" + result + "】です";
-}
+    </div>    
+
+    <script src="app.js"></script> <!-- Make sure the JavaScript file is present -->
+
+</body>
+</html>
