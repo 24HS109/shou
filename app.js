@@ -6,15 +6,11 @@ function checkFortune() {
     // Check for valid combinations
     if (colour === "ピンク" && number === 0) {
         result = "カレー";
-    if (colour === "ピンク" && number === 1) {
-        result = "ハンバーグ";     
-    } else if (colour === "赤" && number === 0) {
-        result = "ラーメン";
-    } else if (colour === "黒" && number === 0) {
+    } else if (colour === "ピンク" && number === 1) {
         result = "牛丼";
-    } else if (colour === "水色" && number === 0) {
+    } else if (colour === "ピンク" && number === 2) {
         result = "オムライス";
-    } else if (colour === "白" && number === 0) {
+    } else if (colour === "ピンク" && number === 3) {
         result = "寿司";
     } else if (colour === "青" && number === 0) {
         result = "うどん";
