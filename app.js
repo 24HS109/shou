@@ -10,7 +10,7 @@ function checkFortune() {
         result = "牛丼";
     } else if (colour === "ピンク" && number === 2) {
         result = "オムライス";
-    } else if (colour === "ピンク" && number === 3) {
+    } else if (colour === "ピンク" && number === 0) {
         result = "寿司";
     } else if (colour === "青" && number === 0) {
         result = "うどん";
