@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ビューポート設定を追加 -->
-<title>今日のご飯</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+    <title>今日のご飯</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Make sure the CSS file is present -->
 </head>
     
 <body>
     <div class="container">
-        
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="pyscript.html">PyScriptVer</a>
-        <a href="cluster_analysis.html">ClusterAnalysis</a>
-    </nav>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="pyscript.html">PyScriptVer</a>
+            <a href="cluster_analysis.html">ClusterAnalysis</a>
+        </nav>
 
         <br>
         <label for="colour-select">好きな色を選んでください：</label>
@@ -34,19 +33,14 @@
         </select>
         <br>
         <label for="number-input">好きな数字を選んでください（1、2、3、4、5、6、7、8、9、10、11）※半角数値で入力：</label>
-        <input type="number" id="number-input">
+        <input type="number" id="number-input" min="1" max="12" step="1">
         <br>
         <button onclick="checkFortune()">今日のご飯</button>
         <p id="result-output"></p>
-        
-    <nav>
-     <a href="index.html">Home</a>
-      <a href="pyscript.html">PyScriptVer</a>
-      <a href="cluster_analysis.html">ClusterAnalysis</a>
-    </nav>
+
     </div>    
 
-    <script src="app.js"></script>
+    <script src="app.js"></script> <!-- Make sure the JavaScript file is present -->
 
 </body>
 </html>
