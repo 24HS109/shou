@@ -10,13 +10,11 @@ function checkFortune() {
         result = "牛丼";
     } else if (colour === "ピンク" && number === 2) {
         result = "オムライス";
-    } else if (colour === "ピンク" && number === 0) {
-        result = "寿司";
-    } else if (colour === "青" && number === 0) {
+     if (colour === "赤" && number === 0) {
         result = "うどん";
-    } else if (colour === "青" && number === 1) {
+    } else if (colour === "赤" && number === 1) {
         result = "ラーメン";
-     } else if (colour === "青" && number === 2) {
+    } else if (colour === "赤" && number === 2) {
         result = "うどん";
 
     document.getElementById('result-output').innerText = "あなたの今日のご飯は【" + result + "】です";
